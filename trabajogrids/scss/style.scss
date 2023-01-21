@@ -1,6 +1,41 @@
-header{
-    display: block;
-    main{display: flexbox;
-
-    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+#grid{
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:0.20fr 1fr 0.15fr ;
+grid-template-areas: 
+"header"
+"main"
+"footer";
+}
+    header{
+        background-color: aquamarine;
+        grid-area:header;
+      }
+      main{
+        background-color: chartreuse;
+        grid-area:main;
+      }
+      footer{
+        background-color: coral;
+        grid-area:footer;
+      }
+     #navegador{
+        display: flex;
+        justify-content:space-around;
+        justify-items: center;
+        align-items: center;
+     }
+     li{
+        list-style-type: none;
+        font-style: normal;
+     }
+     a{
+       font-style: normal; 
+     }
