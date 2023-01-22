@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 header{
-  background-color: aquamarine;
+  background-color:white;
   grid-area:header;
   nav{
     ul{
+       display: flex;
+      flex-wrap: wrap;
+        justify-content:space-around;
+        justify-items: center;
+        align-items: center;
       li{
         list-style-type: none;
         font-style: normal;
@@ -17,6 +22,10 @@ header{
           color:black;
           text-decoration: solid;
           font-size: 1.5rem;
+          &:hover{
+            font-size: 2rem;
+            color:darkgrey;
+          }
          }
        }
       }
@@ -42,11 +51,5 @@ grid-template-areas:
         background-color: coral;
         grid-area:footer;
       }
-     #navegador{
-      display: flex;
-      flex-wrap: wrap;
-        justify-content:space-around;
-        justify-items: center;
-        align-items: center;
-     }
      
+    
