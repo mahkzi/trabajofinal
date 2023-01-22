@@ -3,6 +3,19 @@
   padding: 0;
   box-sizing: border-box; }
 
+header {
+  background-color: aquamarine;
+  grid-area: header; }
+  header nav ul li {
+    list-style-type: none;
+    font-style: normal; }
+    header nav ul li a {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-decoration: none;
+      color: black;
+      text-decoration: solid;
+      font-size: 1.5rem; }
+
 #grid {
   width: 100vw;
   height: 100vh;
@@ -10,10 +23,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: 0.20fr 1fr 0.15fr;
   grid-template-areas: "header" "main" "footer"; }
-
-header {
-  background-color: aquamarine;
-  grid-area: header; }
 
 main {
   background-color: chartreuse;
@@ -25,13 +34,7 @@ footer {
 
 #navegador {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   justify-items: center;
   align-items: center; }
-
-li {
-  list-style-type: none;
-  font-style: normal; }
-
-a {
-  font-style: normal; }

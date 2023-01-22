@@ -3,6 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+  background-color: aquamarine;
+  grid-area:header;
+  nav{
+    ul{
+      li{
+        list-style-type: none;
+        font-style: normal;
+       a{
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          text-decoration: none;
+          color:black;
+          text-decoration: solid;
+          font-size: 1.5rem;
+         }
+       }
+      }
+    }
+  }
 #grid{
     width: 100vw;
     height: 100vh;
@@ -14,10 +33,7 @@ grid-template-areas:
 "main"
 "footer";
 }
-    header{
-        background-color: aquamarine;
-        grid-area:header;
-      }
+    
       main{
         background-color: chartreuse;
         grid-area:main;
@@ -27,15 +43,10 @@ grid-template-areas:
         grid-area:footer;
       }
      #navegador{
-        display: flex;
+      display: flex;
+      flex-wrap: wrap;
         justify-content:space-around;
         justify-items: center;
         align-items: center;
      }
-     li{
-        list-style-type: none;
-        font-style: normal;
-     }
-     a{
-       font-style: normal; 
-     }
+     
