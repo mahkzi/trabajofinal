@@ -1,0 +1,34 @@
+#formulario{
+height:100vh;
+width: 100vw;
+}
+body{
+    form{
+        width: 500px;
+        border: solid;
+        border-color: black;
+        margin: auto;
+        background: rgba(0,0,0,0,4);
+        h2{
+color: aqua;
+        }
+        input{
+color: antiquewhite;
+        }
+        input{
+            color: cadetblue;
+        }
+        input{
+            color: complement($color: #000000);
+        }
+        textarea{
+color: crimson;
+        }
+        input{
+            color: complement($color: #000000);
+        }
+        input{
+            color: darkorange;
+        }
+    }
+}
