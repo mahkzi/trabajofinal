@@ -1,34 +1,154 @@
+
 #formulario{
 height:100vh;
 width: 100vw;
 }
-body{
+header{
+    height: 20vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    div{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        a{
+            img{
+
+            }
+        }
+    }
+
+}
+main{
+    height: 80vh;
+    width: 100vw;
+
     form{
-        width: 500px;
-        border: solid;
-        border-color: black;
+        width: 950px;
         margin: auto;
-        background: rgba(0,0,0,0,4);
+        background: rgba(0,0,0,0);
+        padding: 15px 25px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        border-radius: 15px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         h2{
-color: aqua;
+color: black;
+margin: 0;
+font-size: 30px;
+margin-bottom: 20px;
+text-decoration: dotted;
         }
         input{
-color: antiquewhite;
+            height: 100%;
+width: 100%;
+margin-bottom: 20px;
+padding:10px ;
+box-sizing: border-box;
         }
         input{
-            color: cadetblue;
+            height: 100%;
+            width: 100%;
+            margin-bottom: 20px;
+            padding:10px ;
+            box-sizing: border-box;
         }
-        input{
-            color: complement($color: #000000);
+        input{ 
+            height: 100%;
+            width: 100%;
+margin-bottom: 20px;
+padding:10px ;
+box-sizing: border-box;
         }
         textarea{
-color: crimson;
+            height: 100%;
+            width: 100%;
+            margin-bottom: 20px;
+            padding:10px ;
+            box-sizing: border-box;
+            min-height: 100px;
+            max-height: 150px;
+            max-width: 100%;
+        }
+        div{
+            display: flex;
+            justify-content: space-around;
+        input{
+            height: 100%;
+            width: 100%;
+            margin-bottom: 20px;
+            padding:10px ;
+            box-sizing: border-box;
         }
         input{
-            color: complement($color: #000000);
+            height: 100%;
+            width: 100%;
+            margin-bottom: 20px;
+            padding:10px ;
+            box-sizing: border-box;
         }
-        input{
-            color: darkorange;
+    }
+    }
+}
+footer{
+    height: 10vh;
+    width:100vw ;
+    background-color: whitesmoke;
+    background-attachment: fixed;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-around;
+        div{
+        a{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+            color:black;
+            text-decoration: solid;
+            font-size: 1rem;
+            &:hover{
+              font-size: 1rem;
+              color:darkgrey;}
+            li{
+list-style-type: none;
+img{
+        width: 40px;
+        height: 40px;
+        &:hover{
+         transform:scale(0.8,0.8);
         }
+}
+            }
+        }
+    }
+    div{
+        a{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+            color:black;
+            text-decoration: solid;
+            font-size: 1rem;
+            &:hover{
+              font-size: 1rem;
+              color:darkgrey;}
+            li{
+                list-style-type: none;
+            }
+        }
+    }
+    div{
+        a{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+            color:black;
+            text-decoration: solid;
+            font-size: 1rem;
+            &:hover{
+              font-size: 1rem;
+              color:darkgrey;}
+            li{
+list-style-type: none;
+            }
+        }
+    }
     }
 }
