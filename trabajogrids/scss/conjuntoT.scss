@@ -16,12 +16,12 @@ header{
         justify-content: center;
         a{
             img{
-
+                background-attachment: fixed;
             }
         }
     }
 }
-#accesorios{
+#conjuntot{
     margin: 10px;
     height: 75vh;
     section{
@@ -37,11 +37,14 @@ header{
         padding-top: 30px;
         padding-bottom: 30px;
         a{
+          
             img{
               grid-area: img1;  
               height: 300px;
     width: 300px;
     justify-content: center;
+    &:hover{
+        transform:scale(1,1);}
             }
         }
         a{
