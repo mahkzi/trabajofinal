@@ -103,6 +103,181 @@ footer {
   #insta:hover {
     transform: scale(0.8, 0.8); }
 
+@media (min-width: 50px) and (max-width: 500px) {
+  header {
+    background-color: whitesmoke;
+    grid-area: header; }
+    header nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-around;
+      justify-items: center;
+      align-items: center; }
+      header nav ul li {
+        list-style-type: none;
+        font-style: normal; }
+        header nav ul li a {
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          text-decoration: none;
+          color: black;
+          text-decoration: solid;
+          font-size: 1rem; }
+          header nav ul li a:hover {
+            font-size: 2rem;
+            color: darkgrey; }
+          header nav ul li a img {
+            width: 40px;
+            height: 40px; }
+  h1 {
+    font-size: 1.5rem; }
+  footer {
+    background-color: whitesmoke;
+    grid-area: footer;
+    font-size: 15px; }
+    footer ul {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      footer ul a {
+        color: black;
+        text-decoration: none;
+        text-decoration-line: none; }
+        footer ul a li {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around; }
+          footer ul a li:hover {
+            color: black;
+            text-decoration: underline;
+            text-decoration-color: darkgrey;
+            transition: 4s;
+            height: 3rem; }
+        footer ul a #footer1 {
+          grid-area: li1; }
+        footer ul a #footer2 {
+          grid-area: li2; }
+        footer ul a #footer3 {
+          grid-area: li3; }
+        footer ul a #footer4 {
+          grid-area: li4; }
+  #insta {
+    width: 20px;
+    height: 20px; }
+    #insta:hover {
+      transform: scale(0.8, 0.8); } }
+
+@media (min-width: 650px) and (max-width: 1500px) {
+  main {
+    background-color: white;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.10fr 1fr;
+    grid-template-areas: "h1" "section"; }
+    main h1 {
+      grid-area: h1;
+      color: black;
+      justify-content: center;
+      text-align: center;
+      text-decoration: solid; }
+      main h1:hover {
+        color: darkgrey;
+        transition: all 2s; }
+    main section {
+      grid-area: section;
+      background-color: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-area: "div div" "div div"; }
+      main section div {
+        margin: auto; }
+        main section div a {
+          justify-content: center; }
+          main section div a img {
+            margin-left: 50px;
+            height: 250px;
+            width: 225px;
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            margin: 10px;
+            background-color: lightgray; }
+            main section div a img:hover {
+              transform: scale(1.5, 1.5); } }
+
+@media (min-width: 150px) and (max-width: 650px) {
+  main {
+    background-color: white;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.10fr 1fr;
+    grid-template-areas: "h1" "section"; }
+    main h1 {
+      grid-area: h1;
+      color: black;
+      justify-content: center;
+      text-align: center;
+      text-decoration: solid; }
+      main h1:hover {
+        color: darkgrey;
+        transition: all 2s; }
+    main section {
+      grid-area: section;
+      background-color: white;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-area: "div" "div" "div" "div"; }
+      main section div {
+        display: block;
+        justify-content: center;
+        margin: auto; }
+        main section div a {
+          justify-content: center; }
+          main section div a img {
+            height: 125px;
+            width: 180px;
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            margin: 10px;
+            background-color: lightgray; }
+            main section div a img:hover {
+              transform: scale(1.5, 1.5); } }
+
+@media (min-height: 1400px) {
+  li {
+    font-size: 3rem; }
+  header {
+    background-color: whitesmoke;
+    grid-area: header; }
+    header nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      justify-items: center;
+      align-items: center; }
+      header nav ul li {
+        list-style-type: none;
+        font-style: normal; }
+        header nav ul li a {
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          text-decoration: none;
+          color: black;
+          text-decoration: solid;
+          font-size: 3rem; }
+          header nav ul li a:hover {
+            font-size: 2rem;
+            color: darkgrey; }
+          header nav ul li a img {
+            width: 240px;
+            height: 240px; }
+  h1 {
+    font-size: 3.5rem; } }
+
 #formulario {
   height: 100vh;
   width: 100vw; }
@@ -121,7 +296,7 @@ main {
   height: 70vh;
   width: 100vw; }
   main form {
-    width: 950px;
+    width: auto;
     margin: auto;
     background: rgba(0, 0, 0, 0);
     padding: 15px 25px;
@@ -226,6 +401,64 @@ footer {
         color: darkgrey; }
       footer ul div a li {
         list-style-type: none; }
+
+@media (min-width: 51px) and (max-width: 500px) {
+  footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    background-attachment: fixed; }
+    footer ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: space-around; }
+      footer ul div a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+        font-size: 0.5rem; }
+        footer ul div a:hover {
+          font-size: 1rem;
+          color: darkgrey; }
+        footer ul div a li {
+          font-size: 1rem;
+          list-style-type: none; }
+          footer ul div a li img {
+            width: 60px;
+            height: 60px; }
+            footer ul div a li img:hover {
+              transform: scale(0.8, 0.8); }
+      footer ul div a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+        font-size: 1rem; }
+        footer ul div a:hover {
+          font-size: 1rem;
+          color: darkgrey; }
+        footer ul div a li {
+          list-style-type: none; }
+      footer ul div a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+        font-size: 1rem; }
+        footer ul div a:hover {
+          font-size: 1rem;
+          color: darkgrey; }
+        footer ul div a li {
+          list-style-type: none; }
+  #footer1 {
+    font-size: 0.5rem; }
+  #footer2 {
+    font-size: 13px; }
+  #footer3 {
+    font-size: 13px; } }
 
 * {
   margin: 0;
@@ -351,6 +584,358 @@ footer {
       footer ul div a li {
         list-style-type: none; }
 
+@media (min-width: 51px) and (max-width: 500px) {
+  footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    background-attachment: fixed; }
+    footer ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: space-around; }
+      footer ul div a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+        font-size: 0.5rem; }
+        footer ul div a:hover {
+          font-size: 1rem;
+          color: darkgrey; }
+        footer ul div a li {
+          font-size: 1rem;
+          list-style-type: none; }
+          footer ul div a li img {
+            width: 60px;
+            height: 60px; }
+            footer ul div a li img:hover {
+              transform: scale(0.8, 0.8); }
+      footer ul div a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+        font-size: 1rem; }
+        footer ul div a:hover {
+          font-size: 1rem;
+          color: darkgrey; }
+        footer ul div a li {
+          list-style-type: none; }
+      footer ul div a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+        font-size: 1rem; }
+        footer ul div a:hover {
+          font-size: 1rem;
+          color: darkgrey; }
+        footer ul div a li {
+          list-style-type: none; }
+  #footer1 {
+    font-size: 0.5rem; }
+  #footer2 {
+    font-size: 13px; }
+  #footer3 {
+    font-size: 13px; } }
+
+@media (min-width: 590px) and (max-width: 1200px) {
+  #accesorios section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-area: "img1 img2" "img3 img4" "img5 img6" "img7 img8"; }
+    #accesorios section a img {
+      grid-area: img1;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+      #accesorios section a img:hover {
+        transform: scale(1, 1); }
+    #accesorios section a img {
+      grid-area: img2;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #accesorios section a img {
+      grid-area: img3;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #accesorios section a img {
+      grid-area: img4;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #accesorios section a img {
+      grid-area: img5;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #accesorios section a img {
+      grid-area: img6;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #accesorios section a img {
+      grid-area: img7;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #accesorios section a img {
+      grid-area: img8;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; } }
+
+@media (min-width: 70px) and (max-width: 589px) {
+  #accesorios {
+    margin: 0; }
+    #accesorios section {
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 1fr);
+      grid-area: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8";
+      row-gap: 15px; }
+      #accesorios section a {
+        margin: auto; }
+        #accesorios section a img {
+          grid-area: img1;
+          height: 100px;
+          width: 150px; }
+          #accesorios section a img:hover {
+            transform: scale(1, 1); }
+      #accesorios section a img {
+        grid-area: img2;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #accesorios section a img {
+        grid-area: img3;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #accesorios section a img {
+        grid-area: img4;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #accesorios section a img {
+        grid-area: img5;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #accesorios section a img {
+        grid-area: img6;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #accesorios section a img {
+        grid-area: img7;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #accesorios section a img {
+        grid-area: img8;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; } }
+
+@media (min-width: 51px) and (max-width: 500px) {
+  footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    background-attachment: fixed; }
+    footer ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: space-around; }
+      footer ul div a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+        font-size: 0.5rem; }
+        footer ul div a:hover {
+          font-size: 1rem;
+          color: darkgrey; }
+        footer ul div a li {
+          font-size: 1rem;
+          list-style-type: none; }
+          footer ul div a li img {
+            width: 60px;
+            height: 60px; }
+            footer ul div a li img:hover {
+              transform: scale(0.8, 0.8); }
+      footer ul div a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+        font-size: 1rem; }
+        footer ul div a:hover {
+          font-size: 1rem;
+          color: darkgrey; }
+        footer ul div a li {
+          list-style-type: none; }
+      footer ul div a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+        font-size: 1rem; }
+        footer ul div a:hover {
+          font-size: 1rem;
+          color: darkgrey; }
+        footer ul div a li {
+          list-style-type: none; }
+  #footer1 {
+    font-size: 0.5rem; }
+  #footer2 {
+    font-size: 13px; }
+  #footer3 {
+    font-size: 13px; } }
+
+@media (min-width: 590px) and (max-width: 1200px) {
+  #accesorios section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-area: "img1 img2" "img3 img4" "img5 img6" "img7 img8"; }
+    #accesorios section a img {
+      grid-area: img1;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+      #accesorios section a img:hover {
+        transform: scale(1, 1); }
+    #accesorios section a img {
+      grid-area: img2;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #accesorios section a img {
+      grid-area: img3;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #accesorios section a img {
+      grid-area: img4;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #accesorios section a img {
+      grid-area: img5;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #accesorios section a img {
+      grid-area: img6;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #accesorios section a img {
+      grid-area: img7;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #accesorios section a img {
+      grid-area: img8;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; } }
+
+@media (min-width: 70px) and (max-width: 589px) {
+  #accesorios {
+    margin: 0; }
+    #accesorios section {
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 1fr);
+      grid-area: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8";
+      row-gap: 15px; }
+      #accesorios section a {
+        margin: auto; }
+        #accesorios section a img {
+          grid-area: img1;
+          height: 100px;
+          width: 150px; }
+          #accesorios section a img:hover {
+            transform: scale(1, 1); }
+      #accesorios section a img {
+        grid-area: img2;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #accesorios section a img {
+        grid-area: img3;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #accesorios section a img {
+        grid-area: img4;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #accesorios section a img {
+        grid-area: img5;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #accesorios section a img {
+        grid-area: img6;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #accesorios section a img {
+        grid-area: img7;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #accesorios section a img {
+        grid-area: img8;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -373,7 +958,7 @@ header {
 #ropa {
   margin: 10px;
   height: 75vh; }
-  #ropa section {
+  #ropa section.ropa {
     margin-left: 50px;
     width: 100%;
     height: 100%;
@@ -383,44 +968,44 @@ header {
     grid-area: "img1 img2 img3 img4" "img5 img6 img7 img8";
     padding-top: 30px;
     padding-bottom: 30px; }
-    #ropa section a img {
+    #ropa section.ropa a img {
       grid-area: img1;
       height: 300px;
       width: 300px;
       justify-content: center; }
-      #ropa section a img:hover {
+      #ropa section.ropa a img:hover {
         transform: scale(1, 1); }
-    #ropa section a img {
+    #ropa section.ropa a img {
       grid-area: img2;
       height: 300px;
       width: 300px;
       justify-content: center; }
-    #ropa section a img {
+    #ropa section.ropa a img {
       grid-area: img3;
       height: 300px;
       width: 300px;
       justify-content: center; }
-    #ropa section a img {
+    #ropa section.ropa a img {
       grid-area: img4;
       height: 300px;
       width: 300px;
       justify-content: center; }
-    #ropa section a img {
+    #ropa section.ropa a img {
       grid-area: img5;
       height: 300px;
       width: 300px;
       justify-content: center; }
-    #ropa section a img {
+    #ropa section.ropa a img {
       grid-area: img6;
       height: 300px;
       width: 300px;
       justify-content: center; }
-    #ropa section a img {
+    #ropa section.ropa a img {
       grid-area: img7;
       height: 300px;
       width: 300px;
       justify-content: center; }
-    #ropa section a img {
+    #ropa section.ropa a img {
       grid-area: img8;
       height: 300px;
       width: 300px;
@@ -474,6 +1059,182 @@ footer {
         color: darkgrey; }
       footer ul div a li {
         list-style-type: none; }
+
+@media (min-width: 51px) and (max-width: 500px) {
+  footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    background-attachment: fixed; }
+    footer ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: space-around; }
+      footer ul div a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+        font-size: 0.5rem; }
+        footer ul div a:hover {
+          font-size: 1rem;
+          color: darkgrey; }
+        footer ul div a li {
+          font-size: 1rem;
+          list-style-type: none; }
+          footer ul div a li img {
+            width: 60px;
+            height: 60px; }
+            footer ul div a li img:hover {
+              transform: scale(0.8, 0.8); }
+      footer ul div a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+        font-size: 1rem; }
+        footer ul div a:hover {
+          font-size: 1rem;
+          color: darkgrey; }
+        footer ul div a li {
+          list-style-type: none; }
+      footer ul div a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+        font-size: 1rem; }
+        footer ul div a:hover {
+          font-size: 1rem;
+          color: darkgrey; }
+        footer ul div a li {
+          list-style-type: none; }
+  #footer1 {
+    font-size: 0.5rem; }
+  #footer2 {
+    font-size: 13px; }
+  #footer3 {
+    font-size: 13px; } }
+
+@media (min-width: 590px) and (max-width: 1200px) {
+  #ropa section.ropa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-area: "img1 img2" "img3 img4" "img5 img6" "img7 img8"; }
+    #ropa section.ropa a img {
+      grid-area: img1;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+      #ropa section.ropa a img:hover {
+        transform: scale(1, 1); }
+    #ropa section.ropa a img {
+      grid-area: img2;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #ropa section.ropa a img {
+      grid-area: img3;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #ropa section.ropa a img {
+      grid-area: img4;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #ropa section.ropa a img {
+      grid-area: img5;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #ropa section.ropa a img {
+      grid-area: img6;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #ropa section.ropa a img {
+      grid-area: img7;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #ropa section.ropa a img {
+      grid-area: img8;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; } }
+
+@media (min-width: 70px) and (max-width: 589px) {
+  #ropa {
+    margin: 0; }
+    #ropa section.ropa {
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 1fr);
+      grid-area: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8";
+      row-gap: 15px; }
+      #ropa section.ropa a {
+        margin: auto; }
+        #ropa section.ropa a img {
+          grid-area: img1;
+          height: 100px;
+          width: 150px; }
+          #ropa section.ropa a img:hover {
+            transform: scale(1, 1); }
+      #ropa section.ropa a img {
+        grid-area: img2;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #ropa section.ropa a img {
+        grid-area: img3;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #ropa section.ropa a img {
+        grid-area: img4;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #ropa section.ropa a img {
+        grid-area: img5;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #ropa section.ropa a img {
+        grid-area: img6;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #ropa section.ropa a img {
+        grid-area: img7;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #ropa section.ropa a img {
+        grid-area: img8;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; } }
 
 * {
   margin: 0;
@@ -598,3 +1359,179 @@ footer {
         color: darkgrey; }
       footer ul div a li {
         list-style-type: none; }
+
+@media (min-width: 51px) and (max-width: 500px) {
+  footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    background-attachment: fixed; }
+    footer ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: space-around; }
+      footer ul div a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+        font-size: 0.5rem; }
+        footer ul div a:hover {
+          font-size: 1rem;
+          color: darkgrey; }
+        footer ul div a li {
+          font-size: 1rem;
+          list-style-type: none; }
+          footer ul div a li img {
+            width: 60px;
+            height: 60px; }
+            footer ul div a li img:hover {
+              transform: scale(0.8, 0.8); }
+      footer ul div a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+        font-size: 1rem; }
+        footer ul div a:hover {
+          font-size: 1rem;
+          color: darkgrey; }
+        footer ul div a li {
+          list-style-type: none; }
+      footer ul div a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+        font-size: 1rem; }
+        footer ul div a:hover {
+          font-size: 1rem;
+          color: darkgrey; }
+        footer ul div a li {
+          list-style-type: none; }
+  #footer1 {
+    font-size: 0.5rem; }
+  #footer2 {
+    font-size: 13px; }
+  #footer3 {
+    font-size: 13px; } }
+
+@media (min-width: 590px) and (max-width: 1200px) {
+  #conjuntot section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-area: "img1 img2" "img3 img4" "img5 img6" "img7 img8"; }
+    #conjuntot section a img {
+      grid-area: img1;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+      #conjuntot section a img:hover {
+        transform: scale(1, 1); }
+    #conjuntot section a img {
+      grid-area: img2;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #conjuntot section a img {
+      grid-area: img3;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #conjuntot section a img {
+      grid-area: img4;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #conjuntot section a img {
+      grid-area: img5;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #conjuntot section a img {
+      grid-area: img6;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #conjuntot section a img {
+      grid-area: img7;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; }
+    #conjuntot section a img {
+      grid-area: img8;
+      height: 150px;
+      width: 200px;
+      justify-content: center;
+      margin: auto; } }
+
+@media (min-width: 70px) and (max-width: 589px) {
+  #conjuntot {
+    margin: 0; }
+    #conjuntot section {
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 1fr);
+      grid-area: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8";
+      row-gap: 15px; }
+      #conjuntot section a {
+        margin: auto; }
+        #conjuntot section a img {
+          grid-area: img1;
+          height: 100px;
+          width: 150px; }
+          #conjuntot section a img:hover {
+            transform: scale(1, 1); }
+      #conjuntot section a img {
+        grid-area: img2;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #conjuntot section a img {
+        grid-area: img3;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #conjuntot section a img {
+        grid-area: img4;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #conjuntot section a img {
+        grid-area: img5;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #conjuntot section a img {
+        grid-area: img6;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #conjuntot section a img {
+        grid-area: img7;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; }
+      #conjuntot section a img {
+        grid-area: img8;
+        height: 100px;
+        width: 150px;
+        justify-content: center;
+        margin: auto; } }
